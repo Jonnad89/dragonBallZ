@@ -1,0 +1,137 @@
+/*
+El elemento <body> es un elemento en nivel de bloque (block-level), lo que significa que tomará espacio en la página y que puede tener otros valores de espacio aplicables como margen. Las imágenes, por otra parte, son elementos inline, lo que quiere decir que no puedes aplicarles márgenes, debes dar a la imagen un comportamiento de block-level usando display: block;.
+*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
+  font-family: "Open Sans", sans-serif; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
+  background-color: #00539f;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ff9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
+}
+
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 1px black;
+}
+h2{
+  font-size: 40px;
+  margin: 0;
+  padding: 10px 0;
+  color: #00539f;
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+h3{
+  font-size: 30px;
+  margin: 0;
+  padding: 10px 0;
+  color: #00539f;
+  text-shadow: 2px 2px 1px rgb(20, 20, 20);
+}
+h4{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  list-style: none;
+}
+li{
+  font-weight: 600;
+  padding: 10px;
+  
+}
+.imagenes-goku{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.imagenes-goku > img {
+  width: 120px;
+  padding: 5px;
+  height: 120px;
+  margin: 5px;
+  border: 1px solid red;
+  border-radius: 50%;
+  box-shadow: 2px 2px 1px rgb(20, 20, 20);  
+}
+.imagenes-villanos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.imagenes-villanos > img{
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 1px solid rgb(227, 2, 186);
+  box-shadow: 3px 3px 2px rgb(0, 0, 0); 
+  cursor: pointer;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li:hover {
+  color:rgb(0, 255, 98);
+  cursor: pointer;
+}
+a:hover{
+color:rgb(0, 255, 98);
+}
+
+.btn-usuario{
+  background-color: #00539f;
+  color: #ff9500;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px black;
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn-usuario:hover {
+  background-color: #ff9500;
+  color: #00539f;
+  border: 3px solid #00539f;
+}
